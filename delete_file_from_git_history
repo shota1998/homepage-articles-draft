@@ -16,3 +16,8 @@ https://github.com/rtyley/bfg-repo-cleaner/issues/255#issuecomment-880598254
   
 7:
   git reflog expire --expire=now --all && git gc --prune=now --aggressive
+  
+  todo: write each command, meanings here.
+
+8:
+  git push --force
