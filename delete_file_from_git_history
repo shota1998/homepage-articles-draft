@@ -1,1 +1,11 @@
-https://github.com/rtyley/bfg-repo-cleaner/issues/255
+https://rtyley.github.io/bfg-repo-cleaner/#download
+https://github.com/rtyley/bfg-repo-cleaner/issues/255#issuecomment-880598254
+
+1: Copy address
+2: wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar
+3: move jar file to valid folder
+4: install java 
+  sudo apt-get update
+  sudo apt-get install default-jre
+ 5: make alias
+   alias bfg=java -jar <full path to BFG jar>
