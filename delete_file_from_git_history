@@ -1,4 +1,5 @@
 https://rtyley.github.io/bfg-repo-cleaner/#download
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 https://github.com/rtyley/bfg-repo-cleaner/issues/255#issuecomment-880598254
 
 1: Copy address
@@ -9,3 +10,9 @@ https://github.com/rtyley/bfg-repo-cleaner/issues/255#issuecomment-880598254
   sudo apt-get install default-jre
  5: make alias
    alias bfg=java -jar <full path to BFG jar>
+
+6: If you can see text below, comand aboce was suceeded.
+  BFG run is complete! When ready, run: git reflog expire --expire=now --all && git gc --prune=now --aggressive
+  
+7:
+  git reflog expire --expire=now --all && git gc --prune=now --aggressive
