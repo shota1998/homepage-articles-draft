@@ -2,6 +2,8 @@ https://rtyley.github.io/bfg-repo-cleaner/#download
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 https://github.com/rtyley/bfg-repo-cleaner/issues/255#issuecomment-880598254
 
+https://tech.mobilefactory.jp/entry/2020/12/11/000000
+
 1: Copy address
 2: wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar
 3: move jar file to valid folder
