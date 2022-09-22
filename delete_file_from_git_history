@@ -2,7 +2,7 @@ https://rtyley.github.io/bfg-repo-cleaner/#download
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 https://github.com/rtyley/bfg-repo-cleaner/issues/255#issuecomment-880598254
 
-https://tech.mobilefactory.jp/entry/2020/12/11/000000
+https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
 
 1: Copy address
 2: wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar
@@ -10,16 +10,32 @@ https://tech.mobilefactory.jp/entry/2020/12/11/000000
 4: install java 
   sudo apt-get update
   sudo apt-get install default-jre
- 5: make alias
+5: make alias
    alias bfg=java -jar <full path to BFG jar>
 
-6: If you can see text below, comand aboce was suceeded.
-  BFG run is complete! When ready, run: git reflog expire --expire=now --all && git gc --prune=now --aggressive
+6: bfg --delete-files YOUR-FILE-WITH-SENSITIVE-DATA
+   If you can see text below, comand aboce was suceeded.
+   BFG run is complete! When ready, run: git reflog expire --expire=now --all && git gc --prune=now --aggressive
   
-7:
+7: Clean up git gc.
   git reflog expire --expire=now --all && git gc --prune=now --aggressive
   
   todo: write each command, meanings here.
+  
+  https://tech.mobilefactory.jp/entry/2020/12/11/000000
 
+8: I got error below.
+    fatal: bad object refs/remotes/origin/HEAD
+    fatal: failed to run repack
+    
+8: Resolve error above.
+   git remote set-head Origin --auto
+   
+    https://stackoverflow.com/questions/8839958/how-does-origin-head-get-set
+    
+    If you see below, it's completed.
+      Total 1556 (delta 812), reused 412 (delta 0)
+      
 8:
   git push --force
+  
